@@ -417,6 +417,79 @@ header {
 
 /* ***************Newsletter  section end*********** */
 
+
+
+/* ------------ island section start------------- */
+
+.islands{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  gap: 36px; 
+  margin: 100px 0;
+  
+  
+}
+.islands img{
+  width: 500px;
+  border-radius: 10px;
+  height: 500px;
+  object-fit: cover;
+  position: center;
+  
+}
+.islands .img-div{
+ border-radius: 10px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.island-title{
+  color: #ff5400;
+  font-weight: 800;
+  font-size: 36px;
+  padding-bottom:48px ;
+}
+.island-content {
+padding-top: 18px;
+padding: 10px;
+}
+.island-content h3{
+  font-size: 24px;
+  font-weight: 600;
+}
+.island-content p{
+  color: #5a5a5d;
+  font-size: 16px;
+}
+.island-content h5{
+  color:#5a5a5d ;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+.rate{
+  color: #131318;
+  padding-right: 10px;
+
+}
+
+.booking{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.booking a{
+  text-decoration: none;
+  color: #FFF;
+  font-weight: 800;
+  background: #ff5400;
+  padding: 10px 20px ;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+/* ***************** island section end********************* */
+
 /* ***************footer  section start*********** */
 footer {
   padding-top: 110px;
@@ -461,6 +534,12 @@ footer {
 }
 /* ***************footer  section end*********** */
 
+
+
+
+
+
+
 /* ******* responsive style********* */
 
 @media only screen and (max-width: 600px) {
@@ -499,25 +578,14 @@ footer {
   .banner-items {
   flex-direction: column;
   width: 100%;
-  /* padding: 16px;
-  align-items: flex-start;
-  gap: 24px;
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.3);
-  margin: 0 auto; */
+
 }
 .nav-icon {
     width: 100%;
 }
 .banner-items input {
     width: 100%;
-    /* height: 52px;
-    border-radius: 8px;
-    background: #fff;
-    border: none;
-    color: rgba(19, 19, 24, 0.5);
-    font-size: 16px;
-    padding-left: 10px; */
+
   }
   .banner-section {
     padding: 20px 20px;
@@ -560,7 +628,6 @@ footer {
 .tours-img .tours-img2{
   width: 100%;
   display: block;
-  /* background: url("./Images/rectangle4.png"), lightgray 50%; */
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -647,6 +714,29 @@ footer {
 }
 
 
+
+/* ------------ island section start------------- */
+
+.islands{
+  display: grid;
+  grid-template-columns: auto;
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  gap: 18px; 
+  margin: 24px 0;
+  justify-content: center;
+  
+}
+.islands img{
+  width: 100%;
+
+  
+}
+
+/* ***************** island section end********************* */
+
+
+
 .newsLetter {
   flex-direction: column;
   gap: 16px;
@@ -692,4 +782,54 @@ footer p {
   font-size: 16px;
   padding-bottom: 24px;
 }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+  .full-body {
+    width: 90%;
+    margin: 0 auto;
+  }
+  header {
+    margin-top: 24px;
+    flex-direction: column;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+}
+
+.items{
+  padding-top: 24px;
+}
+
+.banner-items {
+  flex-direction: column;
+  width: 100%;
+}
+
+
+/* ------------ island section start------------- */
+
+.islands{
+  display: grid;
+  grid-template-columns: auto auto;
+  /* grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);*/
+  gap: 18px; 
+  margin: 24px 0;
+  justify-content: center;
+  
+}
+.islands img{
+  width: 100%;
+
+  
+}
+
+/* ***************** island section end********************* */
+
 }
